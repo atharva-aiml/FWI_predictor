@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FWI Predictor - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #dbe6f6, #c5796d);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .home-container {
+            text-align: center;
+            padding: 40px 25px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            max-width: 450px;
+            animation: fadeIn 1s ease;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .home-container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome to FWI Predictor</h1>
+        <p>Predict the Fire Weather Index based on real-time weather conditions and prevent wildfire risks before they happen.</p>
+        <a href="/predictdata" class="cta-button">Start Prediction</a>
+    </div>
+</body>
+</html>
