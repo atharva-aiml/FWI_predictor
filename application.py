@@ -28,10 +28,9 @@ def predict_datapoint():
         FFMC =  float(request.form.get('FFMC'))
         DMC =  float(request.form.get('DMC'))
         ISI =  float(request.form.get('ISI'))
-        Classes =  float(request.form.get('Classes'))
         Region =  float(request.form.get('Region'))
         
-        new_data = scaler.transform([[Temperature, RH, Ws, Rain, FFMC, DMC, ISI, Classes, Region]])
+        new_data = scaler.transform([[Temperature, RH, Ws, Rain, FFMC, DMC, ISI, Region]])
         result = ridge.predict(new_data)
 
         print("I am here")
